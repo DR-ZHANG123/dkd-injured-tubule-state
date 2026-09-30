@@ -39,10 +39,3 @@ All parameters are in `config/run.yaml`. Every stage writes its tables to `resul
 | 14a–14h | Permutation-based agreement, albuminuria models, published proximal tubule states, leukocyte RNA, per-cohort pathways, recruitment site, diabetic-exposure ordering, injury-intensity adjustment |
 | 15 | Summary of pre-specified tests |
 
-## Figures
-
-`scripts/figures/` draws every main and supplementary figure from the result tables only; the plotted values are written to `figures/source_data/`.
-
-## Licence
-
-MIT (see `LICENSE`).
