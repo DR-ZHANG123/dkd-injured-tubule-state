@@ -1,0 +1,12 @@
+data/
+logs/
+__pycache__/
+*.pyc
+*.h5ad
+*.h5
+*.npz
+*.pt
+*.tif
+*.svs
+.ipynb_checkpoints/
+.claude/
