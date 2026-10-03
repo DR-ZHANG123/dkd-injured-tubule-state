@@ -195,7 +195,7 @@ def main():
         "slope_difference.tsv: marker (DKDiPT_up) minus common injury (SharedInjury_up) standardized coefficient; "
         f"separate models with {A['n_boot']} diagnosis-stratified participant bootstrap resamples (seeded), and joint model with HC3 Wald test.\n"
         "Scopes: all = DKD+HKD+HKD_withDM; DKD_only (no diagnosis term); no_HKD_withDM = DKD+HKD. sn primary, sc secondary.\n"
-        "Bands are ordinal percentile ranks (no midpoints); p values are exploratory (analysis_plan change 4/5 family).\n")
+        "Bands are ordinal percentile ranks (no midpoints); p values are exploratory.\n")
     pd.set_option("display.width", 250, "display.max_rows", 500, "display.max_columns", 30)
     print(M.drop(columns=["n_by_group"]).round(4).to_string())
     print(S.round(4).to_string())

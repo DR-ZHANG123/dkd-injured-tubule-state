@@ -3,7 +3,7 @@
 Platforms are analysed separately (GPL24120: DKD vs hypertensive nephropathy, the direct
 cross-disease contrast; GPL22945: DKD vs living donor). Scores = mean per-gene z over samples
 of the platform. Bulk tissue mixes compartments, so the DKD-biased score is additionally
-modelled conditional on the shared-injury score (analysis_plan rule 10)."""
+modelled conditional on the shared-injury score."""
 from __future__ import annotations
 import gzip, sys
 from pathlib import Path

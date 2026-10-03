@@ -1,5 +1,5 @@
-"""11b_histology_association: same-section H&E morphology vs measured programme scores
-(analysis_plan rule 9). Spots are not independent: inference is across sections.
+"""11b_histology_association: same-section H&E morphology vs measured programme scores.
+Spots are not independent: inference is across sections.
 
 A. Interpretable morphology: per section, partial Spearman correlation of each morphology feature
    with the measured DKDiPT_up spot score, adjusting for SharedInjury_up, prop_iPT and PT_share

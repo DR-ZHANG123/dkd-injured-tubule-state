@@ -1,4 +1,4 @@
-"""07c_kpmp_concordance: exploratory complements to the KPMP primary test (analysis_plan change 4).
+"""07c_kpmp_concordance: transcriptome-wide concordance complementing the KPMP primary test.
 
 (a) Participant-level iPT pseudobulk DESeq2 in KPMP (DKD vs HKD, ~ sex + group) per modality,
     and transcriptome-wide concordance with the discovery SN-stratum iPT dE.

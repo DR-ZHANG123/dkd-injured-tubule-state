@@ -1,4 +1,4 @@
-"""07b_validate_kpmp: pre-registered KPMP test of the locked programmes (analysis_plan, KPMP section).
+"""07b_validate_kpmp: primary KPMP test of the marker-gene programmes.
 
 Per modality (sn, sc): label transfer from the matching discovery reference (SN or SC libraries),
 participant-level iPT pseudobulk, programme scores, group contrasts, expression-matched random

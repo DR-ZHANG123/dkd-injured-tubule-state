@@ -9,4 +9,3 @@ __pycache__/
 *.tif
 *.svs
 .ipynb_checkpoints/
-.claude/

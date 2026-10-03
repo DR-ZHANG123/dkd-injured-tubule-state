@@ -60,8 +60,8 @@ lodo:
     fine: [iPT, C_TAL, CNT, Fibroblast_1]
 
 scdisinfact:                 # author defaults (Nat Commun 2024 tutorial) unless stated
-  focus_lineage: PT          # chosen on discovery-internal evidence (03, 03c); see analysis_plan change 1
-  focus_celltypes: [iPT]     # within-state programme; iPT expansion itself is shared (03d); plan change 2
+  focus_lineage: PT          # chosen on discovery-internal evidence (03, 03c)
+  focus_celltypes: [iPT]     # within-state programme; iPT expansion itself is shared (03d)
   min_cells_library: 50
   min_cells_gene: 50
   n_hvg: 5000
@@ -78,14 +78,14 @@ scdisinfact:                 # author defaults (Nat Commun 2024 tutorial) unless
   reg_kl_diff: 1.0e-2
   seeds: [0, 1, 2, 3, 4]
 
-lock:                       # analysis_plan rule 5 (locked 2026-09-29)
+lock:                       # marker-gene selection rules
   ckg_top_frac: 0.10
   dE_fdr: 0.10
   lodo_sign_stable: 0.80
   max_genes: 50
   min_genes: 10
   shared_dE_min_padj: 0.50
-  # a-priori exclusions (plan change 3): sex-chromosome genes (sex is unbalanced across the
+  # a-priori exclusions: sex-chromosome genes (sex is unbalanced across the
   # 3 DKD SN donors), immunoglobulin / haemoglobin / mitochondrial genes (ambient RNA), and
   # symbols that are not HGNC-approved (clone-based lncRNAs, poorly portable across platforms)
   exclude_regex: "^(IG[HKL][VDJC]|IGH[AGMDE]|JCHAIN|HB[ABDEGQMZ]\\d?$|MT-|MTRNR)"
@@ -122,7 +122,7 @@ visium:                     # stages 10a/10b (worker A); iPT-rich spot rule fixe
   marker_min_log2cpm: 3
   n_markers: 30
   marker_min_t: 4
-  min_genes: 5              # analysis_plan rule 8
+  min_genes: 5
   ipt_rich_top_frac: 0.20   # unused: first iPT-rich rule, failed positive control (see 10_visium_common)
   min_spots_participant: 50
   min_spots_section: 20
@@ -192,7 +192,7 @@ contamination_controls:       # stage 14d: leukocyte / ambient-RNA controls for 
   leukocyte_strict: [PTPRC, CD3E, CD2, MS4A1, LYZ, CD52, CORO1A, LCP1, TYROBP, NKG7]
   stroma_strict: [DCN, LUM, COL1A2, COL3A1, PDGFRB, C7]
   # immunoglobulin transcripts are kept out of the leukocyte index (plasma-cell ambient; already excluded
-  # a priori from the programmes, plan change 3) and reported as their own index
+  # a priori from the programmes) and reported as their own index
   ig_genes: [IGKC, IGHG1, IGHA1, IGLC2, JCHAIN]
   immune_lineages: [Myeloid, Lymphoid]      # compartments built from lineage_map
   stroma_lineages: [Stroma]

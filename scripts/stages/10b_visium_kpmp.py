@@ -8,7 +8,7 @@ Rules (fixed in 10_visium_common / config `visium` before any KPMP spot was scor
   positive control), so injury indices enter as covariates;
 - participant pseudobulk = summed counts of PT-rich spots over all of the participant's sections
   (participants with < min_spots_participant PT-rich spots dropped); per-gene z across participants;
-  set score = mean z of measured genes (>= min_genes, analysis_plan rule 8);
+  set score = mean z of measured genes (>= min_genes);
 - contrasts DKD vs HKD / HKD_withDM / DM_noCKD / Reference (Hedges g, Welch, expression-matched
   random-set null) and OLS adjusted for the shared-injury score and the injury index;
 - within-section spot association (DKDiPT_up vs injury index across PT-rich spots), averaged per

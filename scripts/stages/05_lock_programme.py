@@ -1,4 +1,4 @@
-"""05_lock_programme: apply the locked rules (analysis_plan rule 5, changes 1-2) and freeze the
+"""05_lock_programme: apply the marker-gene selection rules and fix the
 gene sets used by every validation stage. Nothing downstream may alter these lists.
 
 Gene sets written to results/05_lock_programme/gene_sets.tsv (set, gene, direction, rank):
